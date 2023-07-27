@@ -1,0 +1,220 @@
+/* .Dark-theme {
+    --main-heading: #ffffff;
+    --para-clr: #fdf4f4;
+    --btn-bg-color: #ffffff;
+    --btn-text-clr: #000000;
+    --bg-clr: #111b20;
+}
+
+.Light-theme {
+    --main-heading: #5f99be;
+    --para-clr: #333;
+    --btn-bg-color: #111b20;
+    --btn-text-clr: #fff;
+    --bg-clr: #fff;
+} */
+
+.Dark-theme {
+    --main-heading: #5f99be;
+    --para-clr: #fff;
+    --btn-bg-color: #5f99be;
+    --btn-text-clr: #fff;
+    --bg-clr: #111b20;
+}
+
+.Light-theme {
+    --main-heading: #5f99be;
+    --para-clr: #333;
+    --btn-bg-color: #111b20;
+    --btn-text-clr: #fff;
+    --bg-clr: #fff;
+}
+
+.Container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-clr);
+
+}
+
+.temprature {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-clr);
+}
+
+.Container h1,
+.heading {
+    text-align: center;
+    color: var(--para-clr);
+    font: 400 1.3vmax "Roboto";
+    padding: 1.3vmax;
+    /* border-bottom: var(--para-clr); */
+    width: 50%;
+    /* margin: auto; */
+}
+
+.Box {
+    background-color: var(--bg-clr);
+    width: 25vw;
+    height: 70vh;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+
+
+.Box>div>button {
+    /* background-color: tomato; */
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+}
+
+.loginForm,
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    transition: all 0.5s;
+}
+
+
+
+.loginForm>div,
+.signUpForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.loginForm>div>input,
+.signUpForm>div>input,
+.loginForm>div>select {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--para-clr);
+    border-radius: 4px;
+    font: 300 0.8vmax cursive;
+}
+
+.loginForm>div>svg,
+.signUpForm>div>svg {
+    position: absolute;
+    transform: translate(1vmax);
+    font-size: 1.6vmax;
+    color: var(--btn-bg-color);
+
+}
+
+.loginForm>a,
+.signUpForm>a {
+    color: var(--para-clr);
+    text-decoration: none;
+    align-self: flex-end;
+    transition: all 0.5s;
+    font: 500 1vmax "Gill Sans";
+}
+
+.loginForm>a:hover {
+    color: var(--para-clr);
+}
+
+
+
+
+
+.loginBtn,
+.signUpBtn,
+.convert-btn {
+    border: none;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-clr);
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 700px) {
+    .Container {
+        background-color: var(--bg-clr);
+    }
+
+    .Box {
+        width: 100vw;
+        height: 95vh;
+    }
+
+
+
+
+    .loginForm,
+    .signUpForm {
+        padding: 5vmax;
+    }
+
+    .loginForm>div>input,
+    .signUpForm>div>input {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax cursive;
+    }
+
+    .loginForm>div>svg,
+    .signUpForm>div>svg {
+        font-size: 2.8vmax;
+    }
+
+    .loginForm>a,
+    .signUpForm>a {
+        font: 500 1.8vmax "Gill Sans";
+    }
+
+
+
+
+    .loginBtn,
+    .signUpBtn,
+    .convert-btn {
+        margin-top: 1vmax;
+        font: 300 2vmax "Roboto";
+        padding: 2vmax;
+    }
+
+    /* .toggelLink {
+        font: 300 1vmax "Roboto";
+    } */
+}
+
+.converter-row label {
+    color: var(--para-clr);
+    /* width: vmax; */
+    /* border: 2px solid; */
+    font: 400 2vmax "Roboto";
+}
+
+.converter-row input {
+    /* margin-left: 3vmax; */
+    padding: 0.5vmax;
+}
